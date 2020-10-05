@@ -2,46 +2,32 @@ $(document).ready(function(){
 // Make a day planner
 var currentDate = moment().format('LLLL');  
 var dateEl =(".todayIs"); 
-var todoInput =document.querySelector(".todo");
-var userInput= document.querySelector(".todo".value);
+var todoInput =$(".todo").value;
+//document.querySelector(".todo".value);
 
- 
-
-
-
-console.log(currentDate) ;
+console.log(todoInput) ;
 $(dateEl).text(currentDate);
 
-
-
 // planner app knows the current day 
-     function clock (){
-        currentDate.update
-     }
-    //api current day 
+    function clock (){
+        var timeEl = currentDate.update
+        var blockTime = ("h3").text.parseint
+        if (blockTime === timeEl){
+            (".this").background(purple);
 
-// planner app know the current time
-    //api current time
-   
-   
-    // // blocks change color to indicate time 
-    // if (blockTime === currentTime){
-    //    //change background color
 
-    // }else if (blockTime > currentTime) {
-    //     //change to future color
-    
-    // }else (blockTime < currentTime) {
-    //     //change to past color  
-    // }
-
+        }else if (blockTime > timeEl) {
+            (".this").background(greem);
+        //change to future color
         
-       // need a blockTime variable to hold time for each block (an array?)
+        }else if (blockTime < TimeEl){
+            (".this").background(blue);
+        //change to past color  
+        }; 
+    };
 
-       //need current time variable to know current time
-    
-            //get what is typed in todo 
-        // console.log($(".todo").value);
+
+         
           
     
         
@@ -49,18 +35,28 @@ $(dateEl).text(currentDate);
         $(".saveBtn").on("click", function(e){
             e.preventDefault();
             console.log("click");
-           
-          localStorage.setItem("userInput", userInput);
-            
-        })
+        //   var userString = JSON.stringify(todoInput);
+            // var userString = todoInput.text
+            localStorage.setItem(".input", todoInput);
 
-        function renderLastRegistered(){
-            var todoSave = localStorage.getItem("userInput");
-        }
+         //display saved content onto page
+
+            var todoSave = localStorage.setItem(".input", todoInput);
+            $(".this").textContent.todoSave;
+
+    
+
+        });
+   
 
         
-        //display saved content onto page
-})
+       
+});
+
+
+//deleted things
+
+ // var userInput= document.querySelector(".todo".value);
 
 
 
