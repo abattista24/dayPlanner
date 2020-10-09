@@ -5,7 +5,7 @@ var dateEl =(".todayIs");
 var todoInput =$(".todo").value;
 //document.querySelector(".todo".value);
 
-console.log(todoInput);
+console.log(todoInput);ith 
 $(dateEl).text(currentDate);
 
 // planner app knows the current day 
